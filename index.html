@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NEXA RENT CAR ? Cyber System</title>
+    <title>NEXA RENT CAR &bull; Cyber System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .bg-cyber-black { background-color: #050505; }
@@ -29,11 +29,10 @@
             <alamat>Jl. Pegelarang No 1 Setu Cipayung, Jakarta Timur</alamat>
             <maps_url>https://maps.app.goo.gl/6wD4sSj9YKRatwbB7?g_st=ac</maps_url>
             <armada>
-                <!-- MPV -->
                 <mobil id="avanza">
                     <kategori>MPV</kategori>
                     <nama>New Avanza</nama>
-                    <tersedia>1</tersedia>
+                    <tersedia>4</tersedia>
                     <kursi>7 Kursi</kursi>
                     <transmisi>Matic</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/lJOpmLKcnRzcmsFnIMityi8fmVQMSyewOHJETX1t.png</foto>
@@ -111,8 +110,6 @@
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/KEOSJMM0x70nINEZbbk3CtM15MluqT0lOjDfSlzH.png</foto>
                     <deskripsi>Puncak kemewahan MPV hybrid ramah lingkungan dengan kesenyapan kabin tingkat tinggi.</deskripsi>
                 </mobil>
-
-                <!-- SUV -->
                 <mobil id="rush">
                     <kategori>SUV</kategori>
                     <nama>Toyota Rush</nama>
@@ -158,8 +155,6 @@
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/261cbb_d86524e6bd554e73b2f267f055a4cb06%7Emv2.png</foto>
                     <deskripsi>Raja segala medan (King of Off-road) dengan kemewahan dan ketangguhan tanpa kompromi.</deskripsi>
                 </mobil>
-
-                <!-- Sedan -->
                 <mobil id="camry">
                     <kategori>Sedan</kategori>
                     <nama>Camry</nama>
@@ -178,8 +173,6 @@
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/carshot_AccordHybrid_front_ACCORD15TLX_2025_CrystalBlackPearl_CY1F2SEW_NH-731P.png</foto>
                     <deskripsi>Sedan sporty dan elegan dengan pengendaraan yang sangat stabil dan fitur futuristik.</deskripsi>
                 </mobil>
-
-                <!-- Commercial / Van -->
                 <mobil id="hiace-commuter">
                     <kategori>Commercial</kategori>
                     <nama>Hiace Commuter</nama>
@@ -198,8 +191,6 @@
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/0sMaFRm6RsFFFslxCXoUqtf3EDWqfahQBh3mpvGP.png</foto>
                     <deskripsi>Versi mewah dari Hiace dengan kenyamanan ekstra dan kabin yang lebih senyap.</deskripsi>
                 </mobil>
-
-                <!-- Bus -->
                 <mobil id="medium-bus">
                     <kategori>Bus</kategori>
                     <nama>Bus Medium</nama>
@@ -223,7 +214,6 @@
     </xml>
 
     <div class="w-full max-w-sm bg-neutral-950 min-h-screen shadow-2xl p-4 flex flex-col justify-between border-x border-neutral-900 relative overflow-hidden">
-        
         <div class="absolute -top-20 -left-20 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute top-1/3 -right-20 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -267,13 +257,12 @@
                         <input type="date" id="tgl-selesai" class="w-full p-2.5 bg-black/90 text-white rounded-xl neon-border focus:outline-none font-medium">
                     </div>
                     
-                    <!-- 2 TOMBOL PILIHAN WHATSAPP -->
                     <div class="grid grid-cols-2 gap-2 pt-1">
                         <button onclick="kirimWhatsApp('6285773118295')" class="neon-glow-btn text-black font-extrabold py-2.5 px-2 rounded-xl transition text-[10px] tracking-wider uppercase text-center">
-                            WA Admin 1 ?
+                            WA Admin 1 &#9889;
                         </button>
                         <button onclick="kirimWhatsApp('6285111500502')" class="neon-glow-btn text-black font-extrabold py-2.5 px-2 rounded-xl transition text-[10px] tracking-wider uppercase text-center">
-                            WA Admin 2 ?
+                            WA Admin 2 &#9889;
                         </button>
                     </div>
                 </div>
@@ -285,7 +274,6 @@
         </footer>
     </div>
 
-    <!-- MODAL DETAIL SPESIFIKASI -->
     <div id="modal-detail" class="fixed inset-0 bg-black/85 z-50 hidden flex items-center justify-center p-4 backdrop-blur-md">
         <div class="cyber-card border border-amber-500/30 w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[85vh]">
             <div class="p-3.5 border-b border-neutral-800 flex justify-between items-center bg-black/60">
@@ -310,7 +298,7 @@
 
             <div class="p-3 border-t border-neutral-800 bg-black/60">
                 <button onclick="pilihDariModal()" class="w-full neon-glow-btn text-black font-extrabold py-2.5 rounded-xl transition uppercase text-xs tracking-widest">
-                    Pilih Unit Ini ?
+                    Pilih Unit Ini &#9889;
                 </button>
             </div>
         </div>
@@ -322,7 +310,7 @@
         function updateClock() {
             const now = new Date();
             const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
-            document.getElementById('live-clock').innerText = "? " + now.toLocaleDateString('id-ID', options);
+            document.getElementById('live-clock').innerText = "🕒 " + now.toLocaleDateString('id-ID', options);
         }
         setInterval(updateClock, 1000);
         updateClock();
@@ -336,7 +324,7 @@
         const mapsUrl = xmlDoc.querySelector("maps_url").textContent;
 
         document.getElementById('rental-logo').src = logoUrl;
-        document.getElementById('rental-alamat').innerText = "? " + alamat;
+        document.getElementById('rental-alamat').innerText = "📍 " + alamat;
         document.getElementById('rental-alamat').href = mapsUrl;
 
         const mobils = xmlDoc.querySelectorAll("mobil");
@@ -380,7 +368,7 @@
                         </div>
                         <div class="px-2.5 pb-2.5 space-y-1.5">
                             <button onclick='bukaModal(${dataString})' class="w-full bg-neutral-900 hover:bg-neutral-800 text-neutral-300 text-[10px] font-semibold py-1.5 rounded border border-neutral-800 transition">
-                                Spesifikasi ?
+                                Spesifikasi 🔍
                             </button>
                             <button onclick="pilihMobilDariKatalog('${namaMobil}')" class="w-full neon-glow-btn text-black text-[10px] font-extrabold py-1.5 rounded transition uppercase tracking-wider">
                                 Pilih Unit
@@ -405,7 +393,7 @@
                         </div>
                         <div class="px-2.5 pb-2.5">
                             <button onclick='bukaModal(${dataString})' class="w-full bg-neutral-900/50 text-neutral-500 text-[10px] font-semibold py-1.5 rounded border border-neutral-900">
-                                Lihat Detail ?
+                                Lihat Detail 🔍
                             </button>
                         </div>
                     </div>

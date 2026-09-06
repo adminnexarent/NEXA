@@ -243,7 +243,7 @@
                     <h2 class="font-bold text-[11px] uppercase tracking-[0.2em] accent-gold flex items-center gap-1.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span> Katalog Armada
                     </h2>
-                    <span class="text-[10px] text-neutral-500 italic">Geser 👉</span>
+                    <span class="text-[10px] text-neutral-500 italic">Geser &rarr;</span>
                 </div>
                 <div id="daftar-mobil" class="flex gap-3 overflow-x-auto no-scrollbar pb-2 pt-1"></div>
             </div>
@@ -281,7 +281,7 @@
         </div>
         
         <footer class="text-center text-[10px] text-neutral-600 mt-6 pt-3 border-t border-neutral-900/80 relative z-10 font-mono">
-            © 2026 NEXA RENT CAR • Neural Secured
+            &copy; 2026 NEXA RENT CAR &bull; Neural Secured
         </footer>
     </div>
 
@@ -290,7 +290,7 @@
         <div class="cyber-card border border-amber-500/30 w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[85vh]">
             <div class="p-3.5 border-b border-neutral-800 flex justify-between items-center bg-black/60">
                 <h3 id="modal-nama" class="font-bold text-xs uppercase tracking-widest text-amber-300">Spesifikasi Unit</h3>
-                <button onclick="tutupModal()" class="text-neutral-400 hover:text-white text-lg font-bold px-2">×</button>
+                <button onclick="tutupModal()" class="text-neutral-400 hover:text-white text-lg font-bold px-2">&times;</button>
             </div>
             
             <div class="p-4 overflow-y-auto space-y-4 text-xs text-neutral-300">
@@ -300,7 +300,6 @@
                 <div class="bg-black/80 p-3 rounded-xl border border-neutral-800 space-y-2 font-mono text-[11px]">
                     <div class="flex justify-between"><span class="text-neutral-500">Kategori:</span> <span id="modal-kategori" class="font-bold text-amber-300"></span></div>
                     <div class="flex justify-between"><span class="text-neutral-500">Kapasitas:</span> <span id="modal-kursi" class="font-bold text-white"></span></div>
-                    <div class="flex justify-between"><span class="text-neutral-500">Transmisi:</span> <span id="modal-transmisi" class="font-bold text-white"></span></div>
                     <div class="flex justify-between"><span class="text-neutral-500">Status Stok:</span> <span id="modal-stok" class="font-bold"></span></div>
                 </div>
                 <div>
@@ -420,7 +419,6 @@
             document.getElementById('modal-foto').src = data.foto;
             document.getElementById('modal-kategori').innerText = data.kategori;
             document.getElementById('modal-kursi').innerText = data.kursi;
-            document.getElementById('modal-transmisi').innerText = data.transmisi;
             
             const stokEl = document.getElementById('modal-stok');
             if (data.tersedia > 0) {

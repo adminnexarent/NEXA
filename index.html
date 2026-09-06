@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NEXA RENT CAR • Cyber System</title>
+    <title>NEXA RENT CAR ? Cyber System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .bg-cyber-black { background-color: #050505; }
@@ -116,7 +116,7 @@
                 <mobil id="rush">
                     <kategori>SUV</kategori>
                     <nama>Toyota Rush</nama>
-                    <tersedia>2</tersedia>
+                    <tersedia>0</tersedia>
                     <kursi>7 Kursi</kursi>
                     <transmisi>Manual / Matic</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/dKMQwWAYeWBU6HxAK300mXb13lAxy3fhY1KRRLa7.png</foto>
@@ -270,10 +270,10 @@
                     <!-- 2 TOMBOL PILIHAN WHATSAPP -->
                     <div class="grid grid-cols-2 gap-2 pt-1">
                         <button onclick="kirimWhatsApp('6285773118295')" class="neon-glow-btn text-black font-extrabold py-2.5 px-2 rounded-xl transition text-[10px] tracking-wider uppercase text-center">
-                            WA Admin 1 ⚡
+                            WA Admin 1 ?
                         </button>
                         <button onclick="kirimWhatsApp('6285111500502')" class="neon-glow-btn text-black font-extrabold py-2.5 px-2 rounded-xl transition text-[10px] tracking-wider uppercase text-center">
-                            WA Admin 2 ⚡
+                            WA Admin 2 ?
                         </button>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
 
             <div class="p-3 border-t border-neutral-800 bg-black/60">
                 <button onclick="pilihDariModal()" class="w-full neon-glow-btn text-black font-extrabold py-2.5 rounded-xl transition uppercase text-xs tracking-widest">
-                    Pilih Unit Ini ⚡
+                    Pilih Unit Ini ?
                 </button>
             </div>
         </div>
@@ -322,7 +322,7 @@
         function updateClock() {
             const now = new Date();
             const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
-            document.getElementById('live-clock').innerText = "🕒 " + now.toLocaleDateString('id-ID', options);
+            document.getElementById('live-clock').innerText = "? " + now.toLocaleDateString('id-ID', options);
         }
         setInterval(updateClock, 1000);
         updateClock();
@@ -336,7 +336,7 @@
         const mapsUrl = xmlDoc.querySelector("maps_url").textContent;
 
         document.getElementById('rental-logo').src = logoUrl;
-        document.getElementById('rental-alamat').innerText = "📍 " + alamat;
+        document.getElementById('rental-alamat').innerText = "? " + alamat;
         document.getElementById('rental-alamat').href = mapsUrl;
 
         const mobils = xmlDoc.querySelectorAll("mobil");
@@ -380,7 +380,7 @@
                         </div>
                         <div class="px-2.5 pb-2.5 space-y-1.5">
                             <button onclick='bukaModal(${dataString})' class="w-full bg-neutral-900 hover:bg-neutral-800 text-neutral-300 text-[10px] font-semibold py-1.5 rounded border border-neutral-800 transition">
-                                Spesifikasi 🔍
+                                Spesifikasi ?
                             </button>
                             <button onclick="pilihMobilDariKatalog('${namaMobil}')" class="w-full neon-glow-btn text-black text-[10px] font-extrabold py-1.5 rounded transition uppercase tracking-wider">
                                 Pilih Unit
@@ -405,7 +405,7 @@
                         </div>
                         <div class="px-2.5 pb-2.5">
                             <button onclick='bukaModal(${dataString})' class="w-full bg-neutral-900/50 text-neutral-500 text-[10px] font-semibold py-1.5 rounded border border-neutral-900">
-                                Lihat Detail 🔍
+                                Lihat Detail ?
                             </button>
                         </div>
                     </div>

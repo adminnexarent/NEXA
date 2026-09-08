@@ -18,9 +18,30 @@
 
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Animasi Splash Screen */
+        #splash-screen {
+            transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+        }
     </style>
 </head>
 <body class="bg-cyber-black text-slate-100 font-sans antialiased flex justify-center items-start min-h-screen">
+
+    <!-- SPLASH SCREEN -->
+    <div id="splash-screen" class="fixed inset-0 bg-cyber-black z-50 flex flex-col items-center justify-center p-6 text-center">
+        <div class="absolute -top-20 -left-20 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 -right-20 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 space-y-4 flex flex-col items-center animate-pulse">
+            <p class="text-xs uppercase tracking-[0.3em] text-neutral-400 font-mono">Selamat datang di</p>
+            <div class="p-1 rounded-2xl bg-gradient-to-b from-amber-500/30 to-transparent shadow-2xl">
+                <img src="https://raw.githubusercontent.com/adminnexarent/NEXA/refs/heads/main/Picsart_26-08-17_12-44-12-169.jpg" alt="Logo Nexa" class="w-56 h-auto object-contain rounded-xl bg-black/90 p-2">
+            </div>
+            <!-- Slogan di Splash Screen -->
+            <p class="text-[11px] uppercase tracking-[0.25em] text-amber-300/90 font-semibold font-mono">Trusted &amp; Luxury Transport Solution</p>
+            <div class="w-8 h-8 border-2 border-amber-500/30 border-t-amber-400 rounded-full animate-spin mt-2"></div>
+        </div>
+    </div>
 
     <xml id="rental-data" style="display:none;">
         <rental>
@@ -32,7 +53,7 @@
                 <mobil id="avanza">
                     <kategori>MPV</kategori>
                     <nama>New Avanza</nama>
-                    <tersedia>2</tersedia>
+                    <tersedia>4</tersedia>
                     <kursi>7 Kursi</kursi>
                     <transmisi>Matic</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/lJOpmLKcnRzcmsFnIMityi8fmVQMSyewOHJETX1t.png</foto>
@@ -41,7 +62,7 @@
                 <mobil id="sigra">
                     <kategori>MPV</kategori>
                     <nama>Sigra</nama>
-                    <tersedia>1</tersedia>
+                    <tersedia>2</tersedia>
                     <kursi>7 Kursi</kursi>
                     <transmisi>Manual / Matic</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/file.png</foto>
@@ -50,8 +71,7 @@
                 <mobil id="veloz">
                     <kategori>MPV</kategori>
                     <nama>Toyota Veloz</nama>
-                    <tersedia>0
-/stok</tersedia>
+                    <tersedia>2</tersedia>
                     <kursi>7 Kursi</kursi>
                     <transmisi>Matic</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/4wGH6TquQKjJvzWXRWGzAbxolPeWbR4VQK05zvJU.png</foto>
@@ -60,7 +80,7 @@
                 <mobil id="reborn">
                     <kategori>MPV</kategori>
                     <nama>Toyota Reborn</nama>
-                    <tersedia>1</tersedia>
+                    <tersedia>2</tersedia>
                     <kursi>7 Kursi</kursi>
                     <transmisi>Matic / Diesel</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/79d7a6ceadbd2a63841e0d45166ea530.png</foto>
@@ -96,7 +116,7 @@
                 <mobil id="alphard-4-non">
                     <kategori>MPV</kategori>
                     <nama>Alphard Gen 4 Non Hybrid</nama>
-                    <tersedia>0</tersedia>
+                    <tersedia>1</tersedia>
                     <kursi>7 Kursi VIP</kursi>
                     <transmisi>Matic</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/Xz0lAuxThR9K65ByytxTgo3Xnklf3dljYw34MlH5.png</foto>
@@ -114,7 +134,7 @@
                 <mobil id="rush">
                     <kategori>SUV</kategori>
                     <nama>Toyota Rush</nama>
-                    <tersedia>0</tersedia>
+                    <tersedia>2</tersedia>
                     <kursi>7 Kursi</kursi>
                     <transmisi>Manual / Matic</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/dKMQwWAYeWBU6HxAK300mXb13lAxy3fhY1KRRLa7.png</foto>
@@ -123,7 +143,7 @@
                 <mobil id="crv">
                     <kategori>SUV</kategori>
                     <nama>New CRV</nama>
-                    <tersedia>0</tersedia>
+                    <tersedia>1</tersedia>
                     <kursi>5/7 Kursi</kursi>
                     <transmisi>Automatic</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/CR-V-Black.png</foto>
@@ -132,7 +152,7 @@
                 <mobil id="palisade">
                     <kategori>SUV</kategori>
                     <nama>Hyundai Palisade</nama>
-                    <tersedia>0</tersedia>
+                    <tersedia>1</tersedia>
                     <kursi>7 Kursi VIP</kursi>
                     <transmisi>Automatic Diesel</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/Picsart_26-01-12_22-06-45-834.png</foto>
@@ -141,7 +161,7 @@
                 <mobil id="palisade-hyb">
                     <kategori>SUV</kategori>
                     <nama>Palisade Hybrid</nama>
-                    <tersedia>0</tersedia>
+                    <tersedia>1</tersedia>
                     <kursi>7 Kursi VIP</kursi>
                     <transmisi>Automatic Hybrid</transmisi>
                     <foto>https://raw.githubusercontent.com/anonymousmixx/halo/refs/heads/main/LX3HEV_9UW7L9G1FAA172_A2B.png</foto>
@@ -223,6 +243,8 @@
                 <div class="relative p-1 rounded-2xl bg-gradient-to-b from-amber-500/30 to-transparent">
                     <img id="rental-logo" src="" alt="Logo NEXA" class="w-44 h-auto object-contain rounded-xl bg-black/80 p-1">
                 </div>
+                <!-- Slogan di Halaman Utama bawah Logo -->
+                <p class="text-[9px] uppercase tracking-[0.2em] text-amber-300/80 font-semibold font-mono mt-1.5">Trusted &amp; Luxury Transport Solution</p>
                 
                 <a id="rental-alamat" href="#" target="_blank" class="text-xs text-neutral-400 underline block hover:text-amber-300 transition mt-2"></a>
                 
@@ -259,7 +281,7 @@
                     </div>
                     
                     <div class="grid grid-cols-2 gap-2 pt-1">
-                        <button onclick="kirimWhatsApp('6282133113376')" class="neon-glow-btn text-black font-extrabold py-2.5 px-2 rounded-xl transition text-[10px] tracking-wider uppercase text-center">
+                        <button onclick="kirimWhatsApp('6285773118295')" class="neon-glow-btn text-black font-extrabold py-2.5 px-2 rounded-xl transition text-[10px] tracking-wider uppercase text-center">
                             WA Admin 1 &#9889;
                         </button>
                         <button onclick="kirimWhatsApp('6285111500502')" class="neon-glow-btn text-black font-extrabold py-2.5 px-2 rounded-xl transition text-[10px] tracking-wider uppercase text-center">
@@ -306,6 +328,14 @@
     </div>
 
     <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const splash = document.getElementById('splash-screen');
+                splash.style.opacity = '0';
+                splash.style.visibility = 'hidden';
+            }, 1800);
+        });
+
         let currentSelectedCar = "";
 
         function updateClock() {
